@@ -1,5 +1,5 @@
 
-# Repetition av variabler och villkor
+# Grundläggande Javascript
 
 ## Innehåll
 
@@ -12,6 +12,9 @@
 - [Arrays](#arrays)
   - [Komma åt värden i en array](#komma-åt-värden-i-en-array)
   - [Manipulera värden i en array](#manipulera-värden-i-en-array)
+- [Loopar](#loopar)
+- [Objekt](#objekt)
+- [Funktioner](#funktioner)
 
 ## Variabler
 
@@ -290,3 +293,15 @@ console.log(numberOfElements); // 4
 ```
 
 [Till toppen](#repetition-av-variabler-och-villkor)
+
+## Loopar
+
+[Till toppen](#grundläggande-javascript)
+
+## Objekt
+
+[Till toppen](#grundläggande-javascript)
+
+## Funktioner
+
+[Till toppen](#grundläggande-javascript)

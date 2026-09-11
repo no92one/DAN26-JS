@@ -12,7 +12,9 @@
 - [Arrays](#arrays)
   - [Komma åt värden i en array](#komma-åt-värden-i-en-array)
   - [Manipulera värden i en array](#manipulera-värden-i-en-array)
+  - [Övningsexempel](#övningsexempel-2)
 - [Loopar](#loopar)
+  - [Övningsexempel](#övningsexempel-3)
 - [Objekt](#objekt)
 - [Funktioner](#funktioner)
 
@@ -292,9 +294,241 @@ const numberOfElements = names.length;
 console.log(numberOfElements); // 4
 ```
 
+### Övningsexempel
+
+**1. Skapa en array och skriv ut några element**
+
+```js
+const foods = ['pancakes', 'meatballs', 'taco', 'sushi', 'hamburger'];
+
+console.log(foods[0]);
+console.log(foods[2]);
+console.log(foods.at(4));
+```
+
+**2. Ändra ett element i en array**
+
+```js
+const cities = ['stockholm', 'gothenburg', 'malmo', 'copenhagen'];
+console.log(cities);
+
+cities[0] = 'helsinki';
+console.log(cities);
+```
+
+**3. Skriv ut det första och sista elementet med `.length`**
+
+```js
+const names = ['niklas', 'henrik', 'erik', 'sofia']; // The length is 4
+
+console.log(names.at(0));
+
+// names.length returns 4, but there is no element at index 4.
+console.log(names[names.length]); // undefined
+
+// Subtract 1 to get the last valid index.
+console.log(names[names.length - 1]); // 'sofia'
+```
+
+**4. Kontrollera längden på en array**
+
+```js
+const products = ['tv', 'playstation', 'xbox', 'laptop'];
+const numberOfProducts = products.length;
+
+console.log(`There are ${numberOfProducts} products available!`);
+
+if (numberOfProducts > 5) {
+    console.log('A lot of products available');
+} else {
+    console.log('Limited amount of products available');
+}
+```
+
 [Till toppen](#repetition-av-variabler-och-villkor)
 
 ## Loopar
+
+Loopar är vårt främsta verktyg för att arbeta med arrayer. Men loopar kan självfallet användas till massa saker där vi behöver iterera kod ett bestämt eller obestämt antal gånger. Allt beror givetvis på situationen i koden. Men det är som det låter, ett stycke kod upprepas tills vi anser att koden har kört färdigt.
+
+### for-loop
+
+En for-loop är en loop som utgår ifrån ett intialt värde och ett vilkor som är kopplat till det initiala värdet. Inför varje iteration så utvärderas detta villkor och avgör om loopen ska iterera vidare eller inte.
+
+Vi tar ett exempel på en gång:
+
+```js
+const colors = ['red', 'blue', 'green'];
+```
+
+Vi vill ni skriva ut varje färg i denna array i consolen, hur gör vi då? Vi kan skriva en console.log för varje element såklart, men har vi mer än 10 stycken element till exemepel, så blir det mycket kod att skriva. 
+
+```js
+console.log(colors[0]); // red
+console.log(colors[1]); // blue
+console.log(colors[2]); // green
+```
+
+Men en loop så kan det se ut så här istället:
+
+```js
+for(let i = 0; i < colors.length; i++) {// Strange syntax..
+	console.log(colors[i])
+}; 
+
+// Output
+// red
+// blue
+// green
+```
+
+Okej, så det fungerade utmärkt. Detta var alltså en så kallad `for-loop`. Dess syntax är ny och ser krånglig ut men här är en beskrivning:
+
+- `for` - Reserverat nyckelordet som säger till JS att här ska vi köra en loop.
+- `let i = 0` - Detta är en temporär variabel som återskapas i varje loop, det initiala värdet där loopen startar. Vi använder oss av index här så "i" i det här fallet motsvarar index-position 0, det är där vi vill starta loopen.
+- `i < colors.lengt` - Detta är villkoret som anger hur länge loopen ska köras. Så länge villkoret är sant så fortsätter den att köra, men så fort det blir falskt så avbryter den. I det här fallet ska "i" vara mindre en längden på colors-arrayen.
+- `i++` - Denna del kallas för "the afterthought", alltså det som ändras efter varje iteration av loopen. I det här fallet ska variablen "i" öga sitt värde med 1 hela tiden.
+- Sen har vi kodblocket som anger vilket kod som körs i varje iteration.
+
+Så detta är alltså en for loop där vi använder oss av indexvärden. Passar perfekt när vi är intresserade av just indexposition av varje givet element arrayen och när vi vet att loopen endast ska köras ett bestämt antal gånger, alltså den ska köras lika många gånger som det finns element i arrayen.
+
+### while-loop
+
+En while loop fungerar ungefär som en for-loop men den använder sig av ett villkor på ett litet annat sätt. Det första som händer är att while-loopen undersöker villkoret. Här det sant så körs den första iterationen, sen inför varje ny iteration så utvärderar den villkoret igen, är det fortfarande sant så fortsätter den, är det falskt so avslutar den.  Man får tänka sig att: "så länge något är sant som vill vi fortsätta iterera loopen".
+
+Syntax:
+
+```js
+while (/* condition */) {
+	// Run code
+}
+```
+
+Vi kan ett exempel som visar hur detta funkar. Ta en räknare till exempel. Vi utgår ifrån ett värde som är 1, och så räknar vi upp det tills det blir 100, och sen avslutar vi den.
+
+```js
+let count = 0;
+
+while (count < 100) {
+	count++
+	// count = count + 1; // Same thing as above
+	console.log(count);
+}
+```
+
+Så i detta fall så skriver vi ut 1-100 i consolen, och när väl `count` blir 100, så kommer villkoret att gå ifrån sant till falsk och då kommer loopen avslutas. Här gäller det att vara försiktig, eftersom vi måste på något sätt trigga att villkoret slår över till falsk någon gång, annars har vi något som kallas för en oändlig loop, och det är inte bra. Ta samma exempel som ovan men vi slarvar med villkoret.
+
+```js
+let count = 0;
+
+while (count >= 0) {
+	count++
+	// count = count + 1; // Same thing as above
+	console.log(count);
+}
+```
+
+Detta resulterar i en oändlig loop och det vill vi helst undvika för det kan göra att datorn kraschar till slut då dess minne kan käkas upp.
+
+En while loop kan användas som en for-loop, men med lite fler rader kod.
+
+```js
+const colors = ['red', 'blue', 'green'];
+let index = 0;
+
+while (index < colors.lengt) {
+	console.log(colors[index]);
+	index++;
+}
+```
+
+Detta funkar fint men är lite mer "boilerplate" än en vanligt for-loop. Minnesregel, använd for-loop när ni jobbar med arrayer, och en while-loop när ni jobbar med annan typ av kod.
+
+### Övningsexempel
+
+**1. Räkna från 1 till 10**
+
+```js
+for (let count = 1; count <= 10; count++) {
+    console.log(count);
+}
+```
+
+**2. Räkna baklänges från 10 till 1**
+
+```js
+for (let count = 10; count > 0; count--) {
+    // count-- is the same as count = count - 1
+    console.log(count);
+}
+```
+
+**3. Skriv ut jämna tal**
+
+```js
+for (let count = 1; count <= 20; count++) {
+    if (count % 2 === 0) {
+        console.log(count);
+    }
+}
+```
+
+**4. Skriv ut alla maträtter**
+
+```js
+const foods = ['tacos', 'hamburger', 'hotdogs', 'pancakes'];
+
+for (let index = 0; index < foods.length; index++) {
+    console.log(foods.at(index));
+}
+```
+
+**5. Skriv ut varje maträtt och dess indexposition**
+
+```js
+const foods = ['tacos', 'hamburger', 'hotdogs', 'pancakes'];
+
+for (let index = 0; index < foods.length; index++) {
+    const currentFood = foods[index];
+    const text = `${index}: ${currentFood}`;
+    console.log(text);
+}
+```
+
+**6. Sök efter ett namn i en array**
+
+```js
+const names = ['niklas', 'henrik', 'erik', 'sofia'];
+const targetName = 'niklas';
+
+for (let index = 0; index < names.length; index++) {
+    if (names[index] === targetName) {
+        const successMessage = `The name '${targetName}' you are looking for exists!`;
+        const successMessage2 = 'The name ' + targetName + ' you are looking for exists!';
+
+        console.log(successMessage);
+        console.log(successMessage2); // String concatenation also works
+    }
+}
+```
+
+**7. Räkna hur många tal som är större än 10**
+
+```js
+const numbers = [4, 60, 34, 134, 30, 5, 7, 14, 2, 3];
+let count = 0;
+
+for (let index = 0; index < numbers.length; index++) {
+    const currentNumber = numbers[index];
+
+    if (currentNumber > 10) {
+        count++;
+    }
+}
+
+const text = `There are ${count} numbers that are greater than 10.`;
+console.log(text);
+```
 
 [Till toppen](#grundläggande-javascript)
 

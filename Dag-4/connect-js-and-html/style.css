@@ -5,3 +5,11 @@
 .blue {
   color: blue;
 }
+
+.product {
+  background-color: lightgray;
+  padding: 5px;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+}

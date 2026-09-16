@@ -41,12 +41,13 @@ for (let i = 0; i < products.length; i++) {
         <input type="number" id="${products[i].name.toLowerCase()}-amount" min="1" value="1">
         <button type="button">Lägg till</button>`
 
-    console.dir(product.innerHTML)
+    //console.dir(product.innerHTML)
 
     menu.appendChild(product)
 }
 
 /*
+
 products.forEach(product => {
     const product = document.createElement("article");
 
@@ -59,3 +60,33 @@ products.forEach(product => {
         <button type="button">Lägg till</button>`
 });
 */
+
+
+const button = document.querySelector("#new-product")
+
+button.addEventListener("click", function () {
+    console.log("lägger till en ny produkt")
+
+    const name = document.querySelector("#new-name").value
+    const description = document.querySelector("#new-description").value
+    const image = document.querySelector("#new-image").value
+    const price = document.querySelector("#new-price").value
+
+    console.log(name)
+    console.log(description)
+    console.log(image)
+    console.log(price)
+
+    const product = document.createElement("article");
+    product.classList.add("product")
+
+    product.innerHTML = `<img src="${image}" alt="Pizza Margherita">
+        <h3>${name}</h3>
+        <p>${description}</p>
+        <p>Pris: ${price} kr</p>
+        <label for="${name.toLowerCase()}-amount">Antal:</label>
+        <input type="number" id="${name.toLowerCase()}-amount" min="1" value="1">
+        <button type="button">Lägg till</button>`
+
+        menu.appendChild(product)
+})

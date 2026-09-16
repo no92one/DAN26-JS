@@ -24,42 +24,6 @@ const products = [
         "name": "Java Burger",
         "description": "Hamburgare med cheddar, sallad, tomat, dressing och pommes frites.",
         "price": 179
-    },
-    {
-        "image": "images/carbonara.jpg",
-        "name": "Carbonara",
-        "description": "Pasta med pancetta, ägg, parmesan och svartpeppar.",
-        "price": 159
-    },
-    {
-        "image": "images/burger.jpg",
-        "name": "Java Burger",
-        "description": "Hamburgare med cheddar, sallad, tomat, dressing och pommes frites.",
-        "price": 179
-    },
-    {
-        "image": "images/carbonara.jpg",
-        "name": "Carbonara",
-        "description": "Pasta med pancetta, ägg, parmesan och svartpeppar.",
-        "price": 159
-    },
-    {
-        "image": "images/burger.jpg",
-        "name": "Java Burger",
-        "description": "Hamburgare med cheddar, sallad, tomat, dressing och pommes frites.",
-        "price": 179
-    },
-    {
-        "image": "images/carbonara.jpg",
-        "name": "Carbonara",
-        "description": "Pasta med pancetta, ägg, parmesan och svartpeppar.",
-        "price": 159
-    },
-    {
-        "image": "images/burger.jpg",
-        "name": "Java Burger",
-        "description": "Hamburgare med cheddar, sallad, tomat, dressing och pommes frites.",
-        "price": 179
     }
 ]
 

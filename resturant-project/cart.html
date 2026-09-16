@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Kundvagn | Restaurang Java</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Restaurang Java</h1>
+
+    <nav>
+      <a href="index.html">Start</a>
+      <a href="appetizers.html">Förrätter</a>
+      <a href="main-courses.html">Huvudrätter</a>
+      <a href="desserts.html">Efterrätter</a>
+      <a href="drinks.html">Dryck</a>
+      <a href="cart.html">Kundvagn</a>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <section>
+      <h2>Din kundvagn</h2>
+
+      <p>
+        Här ser du de produkter som du har lagt till i din beställning.
+      </p>
+    </section>
+
+
+    <section class="cart">
+
+      <article class="cart-item">
+        <h3>Margherita</h3>
+
+        <p>Antal: 2</p>
+
+        <p>Pris per styck: 129 kr</p>
+
+        <p>Totalt: 258 kr</p>
+
+        <button type="button">
+          Ta bort
+        </button>
+      </article>
+
+
+      <article class="cart-item">
+        <h3>Lemonad</h3>
+
+        <p>Antal: 1</p>
+
+        <p>Pris per styck: 45 kr</p>
+
+        <p>Totalt: 45 kr</p>
+
+        <button type="button">
+          Ta bort
+        </button>
+      </article>
+
+    </section>
+
+
+    <section class="cart-summary">
+      <h2>Sammanfattning</h2>
+
+      <p>
+        Totalt antal produkter: 3
+      </p>
+
+      <p>
+        Totalt att betala: 303 kr
+      </p>
+    </section>
+
+
+    <section class="order-form">
+      <h2>Beställningsuppgifter</h2>
+
+      <form>
+
+        <div>
+          <label for="name">Namn</label>
+
+          <input type="text" id="name" name="name" required>
+        </div>
+
+
+        <div>
+          <label for="email">E-post</label>
+
+          <input type="email" id="email" name="email" required>
+        </div>
+
+
+        <div>
+          <label for="phone">Telefonnummer</label>
+
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+
+
+        <div>
+          <label for="address">Adress</label>
+
+          <input type="text" id="address" name="address" required>
+        </div>
+
+
+        <div>
+          <label for="postal-code">Postnummer</label>
+
+          <input type="text" id="postal-code" name="postal-code" required>
+        </div>
+
+
+        <div>
+          <label for="city">Ort</label>
+
+          <input type="text" id="city" name="city" required>
+        </div>
+
+
+        <div>
+          <label for="comment">Kommentar</label>
+
+          <textarea id="comment" name="comment" rows="5"></textarea>
+        </div>
+
+
+        <button type="submit">
+          Skicka beställning
+        </button>
+
+      </form>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>Restaurang Java</p>
+
+    <p>
+      Storgatan 1, Malmö
+    </p>
+
+    <p>
+      Öppet alla dagar 11:00–22:00
+    </p>
+  </footer>
+
+</body>
+
+</html>

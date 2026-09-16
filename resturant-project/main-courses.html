@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Huvudrätter | Restaurang Java</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Restaurang Java</h1>
+
+    <nav>
+      <a href="index.html">Start</a>
+      <a href="appetizers.html">Förrätter</a>
+      <a href="main-courses.html">Huvudrätter</a>
+      <a href="desserts.html">Efterrätter</a>
+      <a href="drinks.html">Dryck</a>
+      <a href="cart.html">Kundvagn</a>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <section>
+      <h2>Huvudrätter</h2>
+
+      <p>
+        Här hittar du våra huvudrätter.
+        Välj antal och lägg till det du vill beställa.
+      </p>
+    </section>
+
+
+    <section class="menu">
+
+      <article class="product">
+        <img src="images/margherita.jpg" alt="Pizza Margherita">
+
+        <h3>Margherita</h3>
+
+        <p>
+          Pizza med tomatsås, mozzarella och färsk basilika.
+        </p>
+
+        <p>
+          Pris: 129 kr
+        </p>
+
+        <label for="margherita-amount">
+          Antal:
+        </label>
+
+        <input type="number" id="margherita-amount" min="1" value="1">
+
+        <button type="button">
+          Lägg till
+        </button>
+      </article>
+
+
+      <article class="product">
+        <img src="images/vesuvio.jpg" alt="Pizza Vesuvio">
+
+        <h3>Vesuvio</h3>
+
+        <p>
+          Pizza med tomatsås, mozzarella och skinka.
+        </p>
+
+        <p>
+          Pris: 139 kr
+        </p>
+
+        <label for="vesuvio-amount">
+          Antal:
+        </label>
+
+        <input type="number" id="vesuvio-amount" min="1" value="1">
+
+        <button type="button">
+          Lägg till
+        </button>
+      </article>
+
+
+      <article class="product">
+        <img src="images/carbonara.jpg" alt="Pasta Carbonara">
+
+        <h3>Carbonara</h3>
+
+        <p>
+          Pasta med pancetta, ägg, parmesan och svartpeppar.
+        </p>
+
+        <p>
+          Pris: 159 kr
+        </p>
+
+        <label for="carbonara-amount">
+          Antal:
+        </label>
+
+        <input type="number" id="carbonara-amount" min="1" value="1">
+
+        <button type="button">
+          Lägg till
+        </button>
+      </article>
+
+
+      <article class="product">
+        <img src="images/burger.jpg" alt="Restaurangens hamburgare">
+
+        <h3>Java Burger</h3>
+
+        <p>
+          Hamburgare med cheddar, sallad, tomat,
+          dressing och pommes frites.
+        </p>
+
+        <p>
+          Pris: 179 kr
+        </p>
+
+        <label for="burger-amount">
+          Antal:
+        </label>
+
+        <input type="number" id="burger-amount" min="1" value="1">
+
+        <button type="button">
+          Lägg till
+        </button>
+      </article>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>Restaurang Java</p>
+
+    <p>
+      Storgatan 1, Malmö
+    </p>
+
+    <p>
+      Öppet alla dagar 11:00–22:00
+    </p>
+  </footer>
+
+</body>
+
+</html>

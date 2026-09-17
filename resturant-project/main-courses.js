@@ -33,7 +33,7 @@ for (let i = 0; i < products.length; i++) {
     const product = document.createElement("article");
     product.classList.add("product")
 
-    product.innerHTML = `<img src="${products[i].image}" alt="Pizza Margherita">
+    product.innerHTML = `<img src="${products[i].image}" alt="${products[i].name}">
         <h3>${products[i].name}</h3>
         <p>${products[i].description}</p>
         <p>Pris: ${products[i].price} kr</p>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Förrätter | Restaurang Java</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Restaurang Java</h1>
+
+    <nav>
+      <a href="../../index.html">Start</a>
+      <a href="appetizers.html">Förrätter</a>
+      <a href="main-courses.html">Huvudrätter</a>
+      <a href="desserts.html">Efterrätter</a>
+      <a href="drinks.html">Dryck</a>
+      <a href="cart.html">Kundvagn</a>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <section>
+      <h2>Förrätter</h2>
+
+      <p>
+        Börja middagen med någon av våra förrätter.
+        Välj antal och lägg till det du vill beställa.
+      </p>
+    </section>
+
+
+    <section class="menu">
+
+      <article class="product">
+        <img src="../assets/bruschetta.jpg" alt="Bruschetta med tomat och basilika">
+
+        <h3>Bruschetta</h3>
+
+        <p>
+          Rostat bröd med tomat, vitlök,
+          basilika och olivolja.
+        </p>
+
+        <p>
+          Pris: 79 kr
+        </p>
+
+        <label for="bruschetta-amount">
+          Antal:
+        </label>
+
+        <input type="number" id="bruschetta-amount" min="1" value="1">
+
+        <button type="button">
+          Lägg till
+        </button>
+      </article>
+
+
+      <article class="product">
+        <img src="../assets/garlic-bread.jpg" alt="Vitlöksbröd">
+
+        <h3>Vitlöksbröd</h3>
+
+        <p>
+          Nybakat bröd med vitlökssmör,
+          örter och parmesan.
+        </p>
+
+        <p>
+          Pris: 69 kr
+        </p>
+
+        <label for="garlic-bread-amount">
+          Antal:
+        </label>
+
+        <input type="number" id="garlic-bread-amount" min="1" value="1">
+
+        <button type="button">
+          Lägg till
+        </button>
+      </article>
+
+
+      <article class="product">
+        <img src="../assets/caprese.jpg" alt="Caprese med tomat och mozzarella">
+
+        <h3>Caprese</h3>
+
+        <p>
+          Tomat, mozzarella, basilika
+          och balsamico.
+        </p>
+
+        <p>
+          Pris: 89 kr
+        </p>
+
+        <label for="caprese-amount">
+          Antal:
+        </label>
+
+        <input type="number" id="caprese-amount" min="1" value="1">
+
+        <button type="button">
+          Lägg till
+        </button>
+      </article>
+
+
+      <article class="product">
+        <img src="../assets/antipasti.jpg" alt="Antipasti med italienska charkuterier">
+
+        <h3>Antipasti</h3>
+
+        <p>
+          Italienska charkuterier, ost,
+          oliver och marinerade grönsaker.
+        </p>
+
+        <p>
+          Pris: 119 kr
+        </p>
+
+        <label for="antipasti-amount">
+          Antal:
+        </label>
+
+        <input type="number" id="antipasti-amount" min="1" value="1">
+
+        <button type="button">
+          Lägg till
+        </button>
+      </article>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>Restaurang Java</p>
+
+    <p>
+      Storgatan 1, Malmö
+    </p>
+
+    <p>
+      Öppet alla dagar 11:00–22:00
+    </p>
+  </footer>
+
+</body>
+
+</html>

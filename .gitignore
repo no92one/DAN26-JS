@@ -3,3 +3,6 @@
 
 # PDF files
 *.pdf
+
+# Private lecture reference project
+/restaurant-project-preparation/

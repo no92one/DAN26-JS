@@ -4,5 +4,8 @@
 # PDF files
 *.pdf
 
+# ZIP archives
+*.zip
+
 # Private lecture reference project
 /restaurant-project-preparation/

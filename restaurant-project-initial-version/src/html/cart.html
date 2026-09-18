@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/style.css">
   <title>Kundvagn | Restaurang Java</title>
+  <script type="module" src="../features/cart/index.js" defer></script>
 </head>
 
 <body>
@@ -35,49 +36,18 @@
     </section>
 
 
-    <section class="cart">
-
-      <article class="cart-item">
-        <h3>Margherita</h3>
-
-        <p>Antal: 2</p>
-
-        <p>Pris per styck: 129 kr</p>
-
-        <p>Totalt: 258 kr</p>
-
-        <button type="button">
-          Ta bort
-        </button>
-      </article>
-
-
-      <article class="cart-item">
-        <h3>Lemonad</h3>
-
-        <p>Antal: 1</p>
-
-        <p>Pris per styck: 45 kr</p>
-
-        <p>Totalt: 45 kr</p>
-
-        <button type="button">
-          Ta bort
-        </button>
-      </article>
-
-    </section>
+    <section class="cart" aria-live="polite"></section>
 
 
     <section class="cart-summary">
       <h2>Sammanfattning</h2>
 
       <p>
-        Totalt antal produkter: 3
+        Totalt antal produkter: <span id="cart-total-amount">0</span>
       </p>
 
       <p>
-        Totalt att betala: 303 kr
+        Totalt att betala: <span id="cart-total-price">0</span> kr
       </p>
     </section>
 

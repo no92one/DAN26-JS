@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/style.css">
   <title>Huvudrätter | Restaurang Java</title>
-  <script type="module" src="../js/main-courses.js" defer></script>
+  <script type="module" src="../features/main-course/index.js" defer></script>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
       <a href="../../index.html">Start</a>
       <a href="appetizers.html">Förrätter</a>
       <a href="main-courses.html">Huvudrätter</a>
-      <a href="desserts.html">Efterrätter</a>
+    <a href="desserts.html">Efterrätter</a>
       <a href="drinks.html">Dryck</a>
       <a href="cart.html">Kundvagn</a>
     </nav>
@@ -36,13 +36,18 @@
       </p>
     </section>
 
-    <section>
-      <input type="text" name="" id="new-name">
-      <input type="text" name="" id="new-description">
-      <input type="text" name="" id="new-image">
-      <input type="number" name="" id="new-price">
+    <form id="main-course-form">
+      <label for="new-name">Name</label>
+      <input type="text" name="name" id="new-name">
+
+      <label for="new-description">Description</label>
+      <input type="text" name="desc" id="new-description">
+
+      <label for="new-price">Price</label>
+      <input type="number" name="price" id="new-price">
+
       <button id="new-product">Lägg till ny produkt</button>
-    </section>
+    </form>
 
     <section class="menu">
       

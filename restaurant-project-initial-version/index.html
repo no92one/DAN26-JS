@@ -1,110 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sv">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="src/css/style.css">
-  <title>Restaurang Java</title>
-  <script type="module" src="src/main.js" defer></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <title>Restaurang Java</title>
+  </head>
+  <body>
+    <header>
+      <h1>Restaurang Java</h1>
 
-  <header>
-    <h1>Restaurang Java</h1>
+      <nav>
+        <a href="index.html">Start</a>
+        <a href="src/html/appetizers.html">Förrätter</a>
+        <a href="src/html/main-courses.html">Huvudrätter</a>
+        <a href="src/html/desserts.html">Efterrätter</a>
+        <a href="src/html/drinks.html">Dryck</a>
+        <a href="src/html/cart.html">Kundvagn</a>
+      </nav>
+    </header>
 
-    <nav>
-      <a href="index.html">Start</a>
-      <a href="src/html/appetizers.html">Förrätter</a>
-      <a href="src/html/main-courses.html">Huvudrätter</a>
-      <a href="src/html/desserts.html">Efterrätter</a>
-      <a href="src/html/drinks.html">Dryck</a>
-      <a href="src/html/cart.html">Kundvagn</a>
-    </nav>
-  </header>
+    <main>
+      <section>
+        <h2>Välkommen till Restaurang Java</h2>
 
-  <main>
+        <p>Här hittar du vår meny med förrätter, huvudrätter, efterrätter och dryck.</p>
+      </section>
 
-    <section>
-      <h2>Välkommen till Restaurang Java</h2>
+      <section class="menus">
+        <h2 id="event-example">Vår meny</h2>
 
-      <p>
-        Här hittar du vår meny med förrätter, huvudrätter,
-        efterrätter och dryck.
-      </p>
-    </section>
+        <article>
+          <h3>Förrätter</h3>
 
+          <img src="src/assets/appetizer.jpg" alt="Förrätt på Restaurang Java" />
 
-    <section class="menus">
-      <h2 id="event-example">Vår meny</h2>
+          <p>Börja middagen med någon av våra förrätter.</p>
 
-      <article>
-        <h3>Förrätter</h3>
+          <a href="src/html/appetizers.html">Visa förrätter</a>
+        </article>
 
-        <img src="src/assets/appetizer.jpg" alt="Förrätt på Restaurang Java">
+        <article>
+          <h3>Huvudrätter</h3>
 
-        <p>
-          Börja middagen med någon av våra förrätter.
-        </p>
+          <img src="src/assets/main-course.jpg" alt="Huvudrätt på Restaurang Java" />
 
-        <a href="src/html/appetizers.html">Visa förrätter</a>
-      </article>
+          <p>Se våra olika huvudrätter.</p>
 
+          <a href="src/html/main-courses.html">Visa huvudrätter</a>
+        </article>
 
-      <article>
-        <h3>Huvudrätter</h3>
+        <article>
+          <h3>Efterrätter</h3>
 
-        <img src="src/assets/main-course.jpg" alt="Huvudrätt på Restaurang Java">
+          <img src="src/assets/dessert.jpg" alt="Efterrätt på Restaurang Java" />
 
-        <p>
-          Se våra olika huvudrätter.
-        </p>
+          <p>Avsluta middagen med något sött.</p>
 
-        <a href="src/html/main-courses.html">Visa huvudrätter</a>
-      </article>
+          <a href="src/html/desserts.html">Visa efterrätter</a>
+        </article>
 
+        <article>
+          <h3>Dryck</h3>
 
-      <article>
-        <h3>Efterrätter</h3>
+          <img src="src/assets/drinks.jpg" alt="Dryck på Restaurang Java" />
 
-        <img src="src/assets/dessert.jpg" alt="Efterrätt på Restaurang Java">
+          <p>Se vårt utbud av drycker.</p>
 
-        <p>
-          Avsluta middagen med något sött.
-        </p>
+          <a href="src/html/drinks.html">Visa drycker</a>
+        </article>
+      </section>
+    </main>
 
-        <a href="src/html/desserts.html">Visa efterrätter</a>
-      </article>
+    <footer>
+      <p>Restaurang Java</p>
 
+      <p>Storgatan 1, Malmö</p>
 
-      <article>
-        <h3>Dryck</h3>
-
-        <img src="src/assets/drinks.jpg" alt="Dryck på Restaurang Java">
-
-        <p>
-          Se vårt utbud av drycker.
-        </p>
-
-        <a href="src/html/drinks.html">Visa drycker</a>
-      </article>
-
-    </section>
-
-  </main>
-
-
-  <footer>
-    <p>Restaurang Java</p>
-
-    <p>
-      Storgatan 1, Malmö
-    </p>
-
-    <p>
-      Öppet alla dagar 11:00–22:00
-    </p>
-  </footer>
-
-</body>
-
+      <p>Öppet alla dagar 11:00–22:00</p>
+    </footer>
+  </body>
 </html>

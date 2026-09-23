@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Pokedex - For educational purposes</h1>
+      <section class="search">
+        <select id="pokemon-type">
+          <option value="">All types</option>
+        </select>
+        <form id="search-pokemon-by-name">
+          <input id="pokemon-name" type="text" placeholder="Enter a Pokemon name" />
+        </form>
+        <button id="get-all-pokemons-btn" type="button">Get all Pokemons</button>
+      </section>
+      <main id="results">
+        <p class="empty-message">No Pokemon currently displayed.</p>
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

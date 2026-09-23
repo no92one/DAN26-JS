@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-background: #f3f4f6;
+  --color-surface: #ffffff;
+  --color-text: #1f2937;
+  --color-text-muted: #6b7280;
+  --color-primary: #b91c1c;
+  --color-primary-hover: #991b1b;
+  --color-border: #d1d5db;
+  --color-border-light: #e5e7eb;
+  --color-shadow: rgba(0, 0, 0, 0.05);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+#app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  margin: 0 0 1.5rem;
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+button,
+input,
+select {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font: inherit;
+}
+
+input,
+select {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+}
+
+button {
+  border: none;
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--color-text);
+  outline-offset: 3px;
+}
+
+#results {
+  min-height: 30rem;
+  padding: 1.5rem;
+  border: 1px solid var(--color-border-light);
+  border-radius: 0.75rem;
+  background-color: var(--color-surface);
+  box-shadow: 0 2px 6px var(--color-shadow);
+}
+
+.empty-message {
+  margin: 0;
+  color: var(--color-text-muted);
+  text-align: center;
+}

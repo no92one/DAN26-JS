@@ -1,0 +1,19 @@
+----------------------------------------------
+
+CREATE TABLE `products` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) DEFAULT NULL,
+  `price` decimal(10,0) DEFAULT NULL,
+  `description` text NOT NULL,
+  PRIMARY KEY (`id`)
+)
+
+----------------------------------------------
+
+INSERT INTO `products` VALUES
+(1,'Hammare',199,'En vanlig hammare'),
+(2,'Såg',449,'En bra såg'),
+(3,'Spik - 50 st',20,'50 st spik'),
+(4,'Spik - 200 st',50,'200 st spik');
+
+----------------------------------------------

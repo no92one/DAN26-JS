@@ -1,4 +1,4 @@
-import { addProductToLS } from "../../shared/localStorage";
+                    import { addProductToLS } from "../../shared/localStorage";
 
 export function createMainCourseEL(mainCourse) {
   const { image, name, description, price } = mainCourse;

@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+}
+
+nav {
+  background-color: #11111b;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 50px
+}
+
+a {
+  color: #89b4fa;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
